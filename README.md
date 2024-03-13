@@ -13,6 +13,7 @@ News App developed with Flutter and API from DummyJson
 ### Store App Interface
 <div style="display:flex;">
     <img src="screenShots/image2.jpeg" alt="Task Interface" style="width:30%;">
+    <img src="screenShots/image8.jpeg" alt="Task Interface" style="width:30%;">
 </div>
 
 
