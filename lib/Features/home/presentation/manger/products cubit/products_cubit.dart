@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store/Features/home/data/repo/products_repo_impl.dart';
+import '../../../data/repo/products_repo_impl.dart';
 
 import '../../../../../utils/models/product.dart';
 import '../../../../../constants.dart';

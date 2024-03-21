@@ -1,7 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../../../utils/models/product.dart';
-import 'cart_product_state.dart';
 import '../../../data/repo/cart_products_repo_impl.dart';
+import 'cart_product_state.dart';
 
 class CartProductCubit extends Cubit<CartProductState> {
   final CartProductsRepoImpl cartProductsRepo;

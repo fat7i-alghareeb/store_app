@@ -1,5 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:store/Features/Cart/data/repo/cart_products_repo.dart';
+import 'cart_products_repo.dart';
 
 import '../../../../utils/models/product.dart';
 

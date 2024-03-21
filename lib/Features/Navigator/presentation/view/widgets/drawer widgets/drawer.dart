@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store/Features/Navigator/presentation/view/widgets/drawer%20widgets/categories_card_widget.dart';
+import '../drawer%20widgets/categories_card_widget.dart';
 
 import '../../../../../home/presentation/manger/categories cubit/categories_cubit.dart';
 import '../../../../../../constants.dart';

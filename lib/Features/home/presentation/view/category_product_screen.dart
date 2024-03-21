@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../manger/categories cubit/categories_cubit.dart';
-import '../manger/categories cubit/categories_state.dart';
-
-import '../../../Navigator/presentation/view/widgets/drawer widgets/drawer.dart';
 
 import '../../../../utils/custom_app_bar.dart';
 import '../../../../utils/products_grid_view.dart';
 import '../../../../utils/shimmer.dart';
+import '../../../Navigator/presentation/view/widgets/drawer widgets/drawer.dart';
+import '../manger/categories cubit/categories_cubit.dart';
+import '../manger/categories cubit/categories_state.dart';
 
 class CategoryProducts extends StatefulWidget {
   final String categoryName;

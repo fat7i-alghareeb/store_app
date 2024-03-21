@@ -1,7 +1,7 @@
 import 'package:get_it/get_it.dart';
-import 'package:store/Features/home/data/repo/products_repo_impl.dart';
-import 'package:store/Features/Cart/data/repo/cart_products_repo_impl.dart';
-import 'package:store/utils/services/products_services.dart';
+import '../Features/home/data/repo/products_repo_impl.dart';
+import '../Features/Cart/data/repo/cart_products_repo_impl.dart';
+import 'services/products_services.dart';
 
 final getIt = GetIt.instance;
 

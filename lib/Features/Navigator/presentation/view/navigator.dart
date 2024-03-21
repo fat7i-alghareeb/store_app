@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store/Features/Navigator/presentation/view/widgets/drawer%20widgets/drawer.dart';
+import 'widgets/drawer%20widgets/drawer.dart';
 import '../../../home/presentation/view/home.dart';
 import '../../../Cart/presentation/view/cart_screen.dart';
 import '../../../../presentation/pages/page3.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store/Features/Navigator/presentation/view/widgets/drawer%20widgets/drawer.dart';
+import '../../../Navigator/presentation/view/widgets/drawer%20widgets/drawer.dart';
 import '../../../home/presentation/manger/products cubit/products_cubit.dart';
 import '../../../home/presentation/view/home.dart';
 import '../../../Cart/presentation/view/cart_screen.dart';
