@@ -18,21 +18,8 @@ class AppRouter {
     switch (settings.name) {
       case mainNavigator:
         return MaterialPageRoute(
-          builder: (_) => MultiBlocProvider(
-            providers: [
-              BlocProvider(
-                create: (context) =>
-                    ProductsCubit(getIt.get<ProductRepoImpl>()),
-              ),
-              BlocProvider(
-                create: (context) =>
-                    CartProductCubit(getIt.get<CartProductsRepoImpl>()),
-              ),
-              BlocProvider(
-                create: (context) =>
-                    CategoriesCubit(getIt.get<ProductRepoImpl>()),
-              )
-            ],
+          builder: (_) => BlocProvider(
+            create: (context) => CategoriesCubit(getIt.get<ProductRepoImpl>()),
             child: const MainNavigator(),
           ),
         );

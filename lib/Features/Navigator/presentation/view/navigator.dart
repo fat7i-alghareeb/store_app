@@ -27,7 +27,6 @@ class _MainNavigatorState extends State<MainNavigator> {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<ProductsCubit>(context).getAllProducts();
   }
 
   void _onPageChanged(int index) {

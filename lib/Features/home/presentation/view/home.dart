@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../utils/service_locator.dart';
 import '../../../../utils/shimmer.dart';
+import '../../data/repo/products_repo_impl.dart';
 import '../manger/products cubit/products_cubit.dart';
 import '../manger/products cubit/products_state.dart';
 
@@ -15,26 +17,25 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //bool scrollable = false;
-    return BlocConsumer<ProductsCubit, ProductsState>(
-      listener: (context, state) {
-        if (state is ProductsLoaded) {
-          //  scrollable = true;
-        }
-      },
-      builder: (context, state) {
-        if (state is ProductsLoaded) {
-          return LoadedView(
-            products: state.products,
-          );
-        } else if (state is ProductsError) {
-          return Center(
-            child: Text(state.errorMessage),
-          );
-        } else {
-          return const MainScreenShimmer();
-        }
-      },
+    return BlocProvider(
+      create: (context) => ProductsCubit(
+        getIt.get<ProductRepoImpl>(),
+      )..getAllProducts(),
+      child: BlocBuilder<ProductsCubit, ProductsState>(
+        builder: (context, state) {
+          if (state is ProductsLoaded) {
+            return LoadedView(
+              products: state.products,
+            );
+          } else if (state is ProductsError) {
+            return Center(
+              child: Text(state.errorMessage),
+            );
+          } else {
+            return const MainScreenShimmer();
+          }
+        },
+      ),
     );
   }
 }
