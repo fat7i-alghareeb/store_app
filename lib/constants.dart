@@ -4,50 +4,6 @@ const String categoryProducts = "/categoryProducts";
 const String searchScreen = "/searchScreen";
 int selectedIndex = -1;
 
-// final sliderImage = [
-//   ClipRRect(
-//     borderRadius: const BorderRadius.only(
-//         bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
-//     child: Image.asset(
-//       "images/thumb.png",
-//       fit: BoxFit.cover,
-//       //width: double.infinity,
-//     ),
-//   ),
-//   ClipRRect(
-//     borderRadius: const BorderRadius.only(
-//         bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
-//     child: Image.asset(
-//       "images/thumb2.png",
-//       fit: BoxFit.cover,
-//     ),
-//   ),
-//   ClipRRect(
-//     borderRadius: const BorderRadius.only(
-//         bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
-//     child: Image.asset(
-//       "images/thumb6.png",
-//       fit: BoxFit.cover,
-//     ),
-//   ),
-//   ClipRRect(
-//     borderRadius: const BorderRadius.only(
-//         bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
-//     child: Image.asset(
-//       "images/thumb3.png",
-//       fit: BoxFit.cover,
-//     ),
-//   ),
-//   ClipRRect(
-//     borderRadius: const BorderRadius.only(
-//         bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
-//     child: Image.asset(
-//       "images/thumb4.png",
-//       fit: BoxFit.cover,
-//     ),
-//   ),
-// ];
-
 final categories = [
   "mens-shirts",
   "lighting",
