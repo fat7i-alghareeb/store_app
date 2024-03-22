@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../utils/assets.dart';
 
-import '../../../../../utils/models/product.dart';
+import '../../../../../shared/models/product.dart';
 
 class InfoWidget extends StatelessWidget {
   const InfoWidget({

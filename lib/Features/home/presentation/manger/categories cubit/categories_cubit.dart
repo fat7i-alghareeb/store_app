@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../data/repo/products_repo_impl.dart';
-import '../../../../../utils/models/product.dart';
+import '../../../../../shared/models/product.dart';
 import 'categories_state.dart';
 import '../../../../../utils/constants.dart';
 

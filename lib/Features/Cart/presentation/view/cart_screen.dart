@@ -8,7 +8,7 @@ import '../manger/cubit/cart_product_state.dart';
 import '../../../Navigator/presentation/view/widgets/slidable.dart';
 import '../../../../shared/widgets/cart_product_widget.dart';
 import '../../../../shared/widgets/custom_app_bar.dart';
-import '../../../../utils/models/product.dart';
+import '../../../../shared/models/product.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

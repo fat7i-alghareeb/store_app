@@ -1,4 +1,4 @@
-import '../../../../../utils/models/product.dart';
+import '../../../../../shared/models/product.dart';
 
 sealed class CategoriesState {}
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../utils/assets.dart';
 
 import '../../utils/constants.dart';
-import '../../utils/models/product.dart';
+import '../models/product.dart';
 import '../../utils/cached_image.dart';
 
 class CartProductWidget extends StatelessWidget {

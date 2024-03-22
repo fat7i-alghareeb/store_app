@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../shared/widgets/products_grid_view.dart';
-import '../../../../utils/models/product.dart';
+import '../../../../shared/models/product.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key, required this.products});

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../service_locator.dart';
 import '../../Features/Cart/presentation/manger/cubit/cart_product_cubit.dart';
-import '../models/product.dart';
+import '../../shared/models/product.dart';
 import '../../Features/Cart/data/repo/cart_products_repo_impl.dart';
 import '../../Features/details/presentation/view/details.dart';
 import '../../Features/search/presentation/view/search_screen.dart';

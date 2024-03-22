@@ -1,7 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import 'cart_products_repo.dart';
 
-import '../../../../utils/models/product.dart';
+import '../../../../shared/models/product.dart';
 
 class CartProductsRepoImpl implements CartProductsRepo {
   final productBox = Hive.box<Product>("product_box");

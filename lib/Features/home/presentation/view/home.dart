@@ -9,7 +9,7 @@ import '../../data/repo/products_repo_impl.dart';
 import '../manger/products cubit/products_cubit.dart';
 import '../manger/products cubit/products_state.dart';
 
-import '../../../../utils/models/product.dart';
+import '../../../../shared/models/product.dart';
 import '../../../../shared/widgets/products_grid_view.dart';
 import 'widgets/swiper_widget.dart';
 

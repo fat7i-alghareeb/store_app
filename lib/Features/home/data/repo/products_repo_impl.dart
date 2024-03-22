@@ -1,7 +1,7 @@
 import 'products_repo.dart';
 
 import '../../../../utils/services/products_services.dart';
-import '../../../../utils/models/product.dart';
+import '../../../../shared/models/product.dart';
 
 class ProductRepoImpl implements ProductsRepo {
   final ProductsServices productsServices;

@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../utils/assets.dart';
 
 import '../../../../Cart/presentation/manger/cubit/cart_product_cubit.dart';
-import '../../../../../utils/models/product.dart';
+import '../../../../../shared/models/product.dart';
 
 class AddToCardWidget extends StatelessWidget {
   const AddToCardWidget({

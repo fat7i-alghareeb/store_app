@@ -3,7 +3,7 @@ import '../../utils/assets.dart';
 import '../../utils/cached_image.dart';
 
 import '../../utils/constants.dart';
-import '../../utils/models/product.dart';
+import '../models/product.dart';
 import '../../utils/router/router_paths.dart';
 
 class ProductsGridView extends StatelessWidget {
