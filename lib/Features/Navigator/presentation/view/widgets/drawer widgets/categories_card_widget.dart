@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../../../../utils/router/router_paths.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../utils/constants.dart';
 
 class CategoriesCard extends StatelessWidget {
   const CategoriesCard({
@@ -23,7 +24,7 @@ class CategoriesCard extends StatelessWidget {
           Scaffold.of(context).closeEndDrawer();
           HapticFeedback.heavyImpact();
         } else {
-          Navigator.pushReplacementNamed(context, categoryProducts,
+          Navigator.pushReplacementNamed(context, KRouter.categoryProducts,
               arguments: name);
           selectedIndex = index;
           HapticFeedback.heavyImpact();

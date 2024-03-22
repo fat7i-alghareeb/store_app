@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../utils/assets.dart';
+import '../../../../utils/router/router_paths.dart';
 import '../../../../utils/service_locator.dart';
-import '../../../../utils/shimmer.dart';
+import '../../../../shared/widgets/shimmer.dart';
 import '../../data/repo/products_repo_impl.dart';
 import '../manger/products cubit/products_cubit.dart';
 import '../manger/products cubit/products_state.dart';
 
-import '../../../../constants.dart';
 import '../../../../utils/models/product.dart';
-import '../../../../utils/products_grid_view.dart';
+import '../../../../shared/widgets/products_grid_view.dart';
 import 'widgets/swiper_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -123,7 +124,7 @@ class LoadedView extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, searchScreen,
+                          Navigator.pushNamed(context, KRouter.searchScreen,
                               arguments: BlocProvider.of<ProductsCubit>(context)
                                   .products);
                           HapticFeedback.heavyImpact();
@@ -139,7 +140,7 @@ class LoadedView extends StatelessWidget {
                           Scaffold.of(context).openEndDrawer();
                         },
                         icon: Image.asset(
-                          "images/menu.png",
+                          AssetsImages.menu,
                           height: 32,
                           color: Theme.of(context).colorScheme.tertiary,
                         ),

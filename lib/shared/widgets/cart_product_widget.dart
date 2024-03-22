@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../utils/assets.dart';
 
-import '../constants.dart';
-import 'models/product.dart';
-import 'cached_image.dart';
+import '../../utils/constants.dart';
+import '../../utils/models/product.dart';
+import '../../utils/cached_image.dart';
 
 class CartProductWidget extends StatelessWidget {
   const CartProductWidget({
@@ -60,7 +61,7 @@ class CartProductWidget extends StatelessWidget {
                       ),
                       Image.asset(
                         categoriesAvailable[product.category] ??
-                            "images/grocery-bag.png",
+                            AssetsImages.groceries,
                         height: 24,
                         color: Colors.teal[200],
                       ),

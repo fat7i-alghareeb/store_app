@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'cached_image.dart';
+import '../../utils/assets.dart';
+import '../../utils/cached_image.dart';
 
-import '../constants.dart';
-import 'models/product.dart';
+import '../../utils/constants.dart';
+import '../../utils/models/product.dart';
+import '../../utils/router/router_paths.dart';
 
 class ProductsGridView extends StatelessWidget {
   final List<Product> products;
@@ -47,7 +49,7 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, detailsScreen, arguments: product);
+        Navigator.pushNamed(context, KRouter.detailsScreen, arguments: product);
       },
       child: Card(
         margin: const EdgeInsets.all(0),
@@ -78,8 +80,7 @@ class ProductCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 8),
               child: Image.asset(
-                categoriesAvailable[product.category] ??
-                    "images/categories/grocery-bag.png",
+                categoriesAvailable[product.category] ?? AssetsImages.groceries,
                 height: 24,
                 color: Theme.of(context).colorScheme.secondary,
               ),

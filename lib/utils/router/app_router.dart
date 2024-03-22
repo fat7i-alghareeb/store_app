@@ -9,21 +9,21 @@ import '../../Features/search/presentation/view/search_screen.dart';
 import '../../Features/home/presentation/manger/categories cubit/categories_cubit.dart';
 import '../../Features/home/presentation/manger/products cubit/products_cubit.dart';
 import '../../Features/home/data/repo/products_repo_impl.dart';
-import '../../constants.dart';
 import '../../Features/home/presentation/view/category_product_screen.dart';
 import '../../Features/Navigator/presentation/view/navigator.dart';
+import 'router_paths.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case mainNavigator:
+      case KRouter.mainNavigator:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (context) => CategoriesCubit(getIt.get<ProductRepoImpl>()),
             child: const MainNavigator(),
           ),
         );
-      case detailsScreen:
+      case KRouter.detailsScreen:
         return MaterialPageRoute(
           builder: (_) {
             final Product product = settings.arguments as Product;
@@ -34,20 +34,20 @@ class AppRouter {
             );
           },
         );
-      case categoryProducts:
+      case KRouter.categoryProducts:
         return MaterialPageRoute(
           builder: (_) {
             final String categoryName = settings.arguments as String;
             return BlocProvider(
-              create: (context) =>
-                  CategoriesCubit(getIt.get<ProductRepoImpl>()),
+              create: (context) => CategoriesCubit(getIt.get<ProductRepoImpl>())
+                ..fetchCategorizeProduct(categoryName),
               child: CategoryProducts(
                 categoryName: categoryName,
               ),
             );
           },
         );
-      case searchScreen:
+      case KRouter.searchScreen:
         return MaterialPageRoute(
           builder: (_) {
             final List<Product> products = settings.arguments as List<Product>;

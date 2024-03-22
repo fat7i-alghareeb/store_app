@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../utils/assets.dart';
 
 class DetailsWidget extends StatelessWidget {
   const DetailsWidget({
@@ -21,7 +22,7 @@ class DetailsWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset(
-                  "images/text-file.png",
+                  AssetsImages.details,
                   height: 30,
                   color: Colors.teal,
                 ),

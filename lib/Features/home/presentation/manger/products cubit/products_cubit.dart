@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../data/repo/products_repo_impl.dart';
 
 import '../../../../../utils/models/product.dart';
-import '../../../../../constants.dart';
+import '../../../../../utils/constants.dart';
 import 'products_state.dart';
 
 class ProductsCubit extends Cubit<ProductsState> {

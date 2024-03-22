@@ -6,8 +6,8 @@ import '../../data/repo/cart_products_repo_impl.dart';
 import '../manger/cubit/cart_product_cubit.dart';
 import '../manger/cubit/cart_product_state.dart';
 import '../../../Navigator/presentation/view/widgets/slidable.dart';
-import '../../../../utils/cart_product_widget.dart';
-import '../../../../utils/custom_app_bar.dart';
+import '../../../../shared/widgets/cart_product_widget.dart';
+import '../../../../shared/widgets/custom_app_bar.dart';
 import '../../../../utils/models/product.dart';
 
 class CartScreen extends StatelessWidget {

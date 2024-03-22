@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../../../utils/products_grid_view.dart';
+import '../../../../shared/widgets/products_grid_view.dart';
 import '../../../../utils/models/product.dart';
 
 class SearchScreen extends StatefulWidget {

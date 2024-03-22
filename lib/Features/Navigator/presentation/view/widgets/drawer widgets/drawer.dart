@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../../../utils/router/router_paths.dart';
 import '../drawer%20widgets/categories_card_widget.dart';
 
 import '../../../../../home/presentation/manger/categories cubit/categories_cubit.dart';
-import '../../../../../../constants.dart';
+import '../../../../../../utils/constants.dart';
 
 class DrawerWidget extends StatefulWidget {
   const DrawerWidget({
@@ -41,7 +42,8 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                     HapticFeedback.heavyImpact();
                   } else {
                     selectedIndex = -1;
-                    Navigator.pushReplacementNamed(context, mainNavigator);
+                    Navigator.pushReplacementNamed(
+                        context, KRouter.mainNavigator);
                     HapticFeedback.heavyImpact();
                   }
                 },

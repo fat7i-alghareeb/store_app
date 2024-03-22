@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../../../utils/assets.dart';
 import '../../../../utils/models/product.dart';
-import '../../../../constants.dart';
+import '../../../../utils/constants.dart';
 import '../../../details/presentation/view/widgets/add_to_cart.dart';
 import '../../../details/presentation/view/widgets/details.dart';
 import '../../../details/presentation/view/widgets/details_images.dart';
@@ -22,8 +23,7 @@ class DetailsScreen extends StatelessWidget {
           ),
         ),
         title: Image.asset(
-          categoriesAvailable[product.category] ??
-              "images/categories/grocery-bag.png",
+          categoriesAvailable[product.category] ?? AssetsImages.groceries,
           //fit: BoxFit.cover,
           height: 35,
           color: Colors.teal[300],

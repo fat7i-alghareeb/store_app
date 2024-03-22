@@ -1,5 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+import '../../../../../utils/assets.dart';
 
 class SwiperWidget extends StatelessWidget {
   const SwiperWidget({
@@ -43,7 +44,7 @@ class ImageSliderWidget extends StatelessWidget {
               bottomRight: Radius.circular(30),
             ),
             child: Image.asset(
-              "images/thumbnails/thumb$index.png",
+              AssetsImages.thumbs[index],
               fit: BoxFit.cover,
               //width: double.infinity,
             ),

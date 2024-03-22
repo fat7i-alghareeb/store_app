@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../Features/home/presentation/manger/products cubit/products_cubit.dart';
-import '../constants.dart';
+import '../../utils/assets.dart';
+import '../../utils/router/router_paths.dart';
+import '../../Features/home/presentation/manger/products cubit/products_cubit.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -34,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, searchScreen,
+                Navigator.pushNamed(context, KRouter.searchScreen,
                     arguments:
                         BlocProvider.of<ProductsCubit>(context).products);
                 HapticFeedback.heavyImpact();
@@ -53,7 +54,7 @@ class CustomAppBar extends StatelessWidget {
                 Scaffold.of(context).openEndDrawer();
               },
               icon: Image.asset(
-                'images/menu.png',
+                AssetsImages.menu,
                 height: 32,
                 color: Theme.of(context).colorScheme.secondary,
               ),

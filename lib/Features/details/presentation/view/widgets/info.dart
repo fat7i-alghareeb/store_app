@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../utils/assets.dart';
 
 import '../../../../../utils/models/product.dart';
 
@@ -26,7 +27,7 @@ class InfoWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset(
-                  "images/comment-info.png",
+                  AssetsImages.info,
                   height: 30,
                   color: Colors.teal,
                 ),

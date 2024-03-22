@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../../utils/assets.dart';
 
 import '../../../../Cart/presentation/manger/cubit/cart_product_cubit.dart';
 import '../../../../../utils/models/product.dart';
@@ -49,7 +50,7 @@ class AddToCardWidget extends StatelessWidget {
             );
           },
           icon: Image.asset(
-            'images/add-to-cart.png',
+            AssetsImages.addToCart,
             height: 30,
             color: Colors.teal[300],
           ),
